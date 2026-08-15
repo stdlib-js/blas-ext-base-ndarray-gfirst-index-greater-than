@@ -1,5 +1,28 @@
-"use strict";var v=function(t,r){return function(){try{return r||t((r={exports:{}}).exports,r),r.exports}catch(e){throw (r=0, e)}};};var s=v(function(x,n){
-var q=require('@stdlib/ndarray-base-numel-dimension/dist'),i=require('@stdlib/ndarray-base-stride/dist'),a=require('@stdlib/ndarray-base-offset/dist'),u=require('@stdlib/ndarray-base-data-buffer/dist'),d=require('@stdlib/blas-ext-base-gfirst-index-greater-than/dist').ndarray;function f(t){var r=t[0],e=t[1];return d(q(r,0),u(r),i(r,0),a(r),u(e),i(e,0),a(e))}n.exports=f
-});var g=s();module.exports=g;
 /** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
+
+'use strict';
+
+/**
+* Return the index of the first element in a one-dimensional ndarray which is greater than a corresponding element in another one-dimensional ndarray.
+*
+* @module @stdlib/blas-ext-base-ndarray-gfirst-index-greater-than
+*
+* @example
+* var vector = require( '@stdlib/ndarray-vector-ctor' );
+* var gfirstIndexGreaterThan = require( '@stdlib/blas-ext-base-ndarray-gfirst-index-greater-than' );
+*
+* var x = vector( [ 0.0, 0.0, 1.0, 0.0 ], 'generic' );
+* var y = vector( [ 0.0, 0.0, 0.0, 0.0 ], 'generic' );
+*
+* var idx = gfirstIndexGreaterThan( [ x, y ] );
+* // returns 2
+*/
+
+// MODULES //
+
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;
