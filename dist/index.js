@@ -1,28 +1,5 @@
+"use strict";var g=function(a,r){return function(){try{return r||a((r={exports:{}}).exports,r),r.exports}catch(e){throw (r=0, e)}};};var c=g(function(k,o){
+var l=require('@stdlib/ndarray-base-ndarraylike2scalar/dist'),m=require('@stdlib/ndarray-base-numel-dimension/dist'),x=require('@stdlib/ndarray-base-stride/dist'),q=require('@stdlib/ndarray-base-offset/dist'),f=require('@stdlib/ndarray-base-data-buffer/dist'),p=require('@stdlib/ndarray-base-clip-index/dist'),y=require('@stdlib/blas-ext-base-gfirst-index-greater-than/dist').ndarray;function I(a){var r,e,n,u,s,d,i,t,v;return t=a[0],v=a[1],r=l(a[2]),i=m(t,0),r=p(r,i),r>=i?-1:(i-=r,n=x(t,0),s=q(t)+n*r,u=x(v,0),d=q(v)+u*r,e=y(i,f(t),n,s,f(v),u,d),e>=0&&(e+=r),e)}o.exports=I
+});var D=c();module.exports=D;
 /** @license Apache-2.0 */
-
-'use strict';
-
-/**
-* Return the index of the first element in a one-dimensional ndarray which is greater than a corresponding element in another one-dimensional ndarray.
-*
-* @module @stdlib/blas-ext-base-ndarray-gfirst-index-greater-than
-*
-* @example
-* var vector = require( '@stdlib/ndarray-vector-ctor' );
-* var gfirstIndexGreaterThan = require( '@stdlib/blas-ext-base-ndarray-gfirst-index-greater-than' );
-*
-* var x = vector( [ 0.0, 0.0, 1.0, 0.0 ], 'generic' );
-* var y = vector( [ 0.0, 0.0, 0.0, 0.0 ], 'generic' );
-*
-* var idx = gfirstIndexGreaterThan( [ x, y ] );
-* // returns 2
-*/
-
-// MODULES //
-
-var main = require( './main.js' );
-
-
-// EXPORTS //
-
-module.exports = main;
+//# sourceMappingURL=index.js.map
